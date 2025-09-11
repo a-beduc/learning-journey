@@ -1,0 +1,6 @@
+[project]
+name = "learning-journey"
+version = "0.1.0"
+description = "Collection of exercise and code snippet"
+requires-python = ">=3.13"
+dependencies = []
