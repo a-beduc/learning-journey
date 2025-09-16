@@ -1,43 +1,60 @@
-https://www.hackerrank.com/challenges/text-wrap/problem
+https://www.hackerrank.com/challenges/designer-door-mat/problem?isFullScreen=true
 
-You are given a string S and width w.
-Your task is to wrap the string into a paragraph of width w.
+Mr. Vincent works in a door mat manufacturing company. One day, he designed a new door mat with the following specifications:
+* Mat size must be `N x M`. (`M` is an odd natural number, and `M` is `3` times `N`.)
+* The design should have 'WELCOME' written in the center. 
+* The design pattern should only use `|`, `.` and `-` characters.
 
-Function Description
+Sample Designs
 
-Complete the wrap function in the editor below.
-
-wrap has the following parameters:
-
-* string string: a long string
-* int max_width: the width to wrap to
-
-Returns
-
-* string: a single string with newline characters ('\n') where the breaks should be
+    Size: 7 x 21 
+    ---------.|.---------
+    ------.|..|..|.------
+    ---.|..|..|..|..|.---
+    -------WELCOME-------
+    ---.|..|..|..|..|.---
+    ------.|..|..|.------
+    ---------.|.---------
+    
+    Size: 11 x 33
+    ---------------.|.---------------
+    ------------.|..|..|.------------
+    ---------.|..|..|..|..|.---------
+    ------.|..|..|..|..|..|..|.------
+    ---.|..|..|..|..|..|..|..|..|.---
+    -------------WELCOME-------------
+    ---.|..|..|..|..|..|..|..|..|.---
+    ------.|..|..|..|..|..|..|.------
+    ---------.|..|..|..|..|.---------
+    ------------.|..|..|.------------
+    ---------------.|.---------------
 
 Input Format
 
-The first line contains a string, string.
-The second line contains the width, max_width.
+A single line containing the space separated values of `N` and `M`.
 
 Constraints
+
+* `5 < N < 101`
+* `15 < M < 303`
+
+Output Format
+
+Output the design pattern.
+
+Sample Input
+
+```9 27```
+
+Sample Output
 ```
-0 < len(string) < 1000
-0 < max_width < len(string)
-```
-Sample Input 0
-```
-ABCDEFGHIJKLIMNOQRSTUVWXYZ
-4
-```
-Sample Output 0
-```
-ABCD
-EFGH
-IJKL
-IMNO
-QRST
-UVWX
-YZ
+------------.|.------------
+---------.|..|..|.---------
+------.|..|..|..|..|.------
+---.|..|..|..|..|..|..|.---
+----------WELCOME----------
+---.|..|..|..|..|..|..|.---
+------.|..|..|..|..|.------
+---------.|..|..|.---------
+------------.|.------------
 ```

@@ -1,19 +1,11 @@
-# Enter your code here. Read input from STDIN. Print output to STDOUT
-
-def welcome_line(m):
-    return "WELCOME".center(m, "-")
-
-
-def cone_block(n, m):
-    return [(i * ".|.").center(m, "-") for i in range(1, n - 1, 2)]
+def wrap(input_string, input_max_width):
+    output_string = ""
+    for i in range(0, len(input_string), input_max_width):
+        output_string += f"{input_string[i:i + input_max_width]}\n"
+    return output_string
 
 
-if __name__ == "__main__":
-    N, M = map(int, input().split(" "))
-    wel = welcome_line(M)
-    cone = cone_block(N, M)
-    top_cone = '\n'.join(cone)
-    cone.reverse()
-    bot_cone = '\n'.join(cone)
-    doormat = '\n'.join([top_cone, wel, bot_cone])
-    print(doormat)
+if __name__ == '__main__':
+    string, max_width = input(), int(input())
+    result = wrap(string, max_width)
+    print(result)
