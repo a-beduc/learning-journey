@@ -132,7 +132,7 @@ ird of all the battles of the Revolutionary War took place in New York.
 's 1609 voyage marked the beginning of European involvement with the area.
 ```
 
-# Cut 7
+## Cut 7
 https://www.hackerrank.com/challenges/text-processing-cut-7/problem
 
 Given a sentence, identify and display its fourth word. Assume that the space (' ') is the only delimiter between words.
