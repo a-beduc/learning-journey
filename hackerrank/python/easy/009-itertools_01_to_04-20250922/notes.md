@@ -6,6 +6,11 @@ are more efficient. And they are more easily read most of the time.
 
 link: https://stackoverflow.com/questions/1247486/list-comprehension-vs-map
 
+/!\/!\/!\
+2025-09-28 update: I just read that the difference between map and list comprehension is that
+map is lazy, meaning that if we do not need to reference to the list element (one traversal), 
+map might be the better approach.
+/!\/!\/!\
 
 ## flatten lists
 
