@@ -23,7 +23,7 @@ learning-journey
    └─ shell
       └─ difficulty   
          └─ number-problem_name-date
-            ├─ solution.py
+            ├─ solution.sh
             ├─ problem.md
             └─ notes.md        # Optional
 ```

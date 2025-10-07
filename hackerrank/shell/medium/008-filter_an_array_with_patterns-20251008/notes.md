@@ -1,0 +1,1 @@
+awk to not print only the lines with pattern : ``awk '!/pattern/' input``
